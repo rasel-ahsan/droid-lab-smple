@@ -2,7 +2,10 @@ package com.rasel.droidlabcompose.ui.screen
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -27,6 +30,13 @@ internal fun ListScreen(
                 headlineContent = { Text(item.title) },
                 supportingContent = { Text(item.subtitle) },
                 overlineContent = { Text(item.category) },
+                trailingContent = {
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Default.KeyboardArrowRight,
+                        contentDescription = null,
+                    )
+//                    Text(text = "Meta info")
+                },
             )
             HorizontalDivider()
         }
