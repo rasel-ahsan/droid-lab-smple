@@ -26,6 +26,7 @@ internal fun ListScreen(
             ListItem(
                 headlineContent = { Text(item.title) },
                 supportingContent = { Text(item.subtitle) },
+                overlineContent = { Text(item.category) },
             )
             HorizontalDivider()
         }
