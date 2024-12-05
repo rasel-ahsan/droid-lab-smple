@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.unit.dp
+import com.rasel.droidlabcompose.data.model.ListItemData
 import com.rasel.droidlabcompose.ui.screen.ListScreen
 import com.rasel.droidlabcompose.ui.theme.DroidLabComposeTheme
 
@@ -56,24 +57,22 @@ private fun AppContent() {
 }
 
 val sampleData = listOf(
-    "The quick brown rabbit jumps.",
-    "Android is the most popular OS.",
-    "Compose for building native UI.",
-    "Kotlin is a statically typed.",
-    "Jetpack Compose for native UI.",
-    "Programming creates instructions.",
-    "Long text should wrap to next line.",
-    "Short text.",
-    "Lorem ipsum dolor sit amet.",
-    "Duis aute irure dolor.",
-    "Lorem ipsum dolor sit amet.",
-    "Duis aute irure dolor.",
-    "Lorem ipsum dolor sit amet.",
-    "Duis aute irure dolor.",
-    "Lorem ipsum dolor sit amet.",
-    "Duis aute irure dolor.",
-    "Lorem ipsum dolor sit amet.",
-    "Duis aute irure dolor.",
-    "Lorem ipsum dolor sit amet.",
-    "Duis aute irure dolor.",
+    ListItemData("The quick brown rabbit", "jumps over the lazy frogs and the quick brown fox jumps over the lazy dog."),
+    ListItemData("Android", "is the most popular mobile operating system in the world."),
+    ListItemData("Compose", "for building native UI for Android applications."),
+    ListItemData("Kotlin", "is a statically typed programming language that targets the JVM."),
+    ListItemData("Jetpack Compose", "is a modern toolkit for building native UI for Android."),
+    ListItemData("Programming", "creates instructions for computers to follow and execute."),
+    ListItemData("Long text", "should wrap to the next line when it exceeds the available width."),
+    ListItemData("Short text", "is concise and to the point."),
+    ListItemData("Lorem ipsum", "dolor sit amet, consectetur adipiscing elit."),
+    ListItemData("Duis aute", "irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."),
+    ListItemData("Lorem ipsum", "dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    ListItemData("Duis aute", "irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
+    ListItemData("Lorem ipsum", "dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
+    ListItemData("Duis aute", "irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."),
+    ListItemData("Lorem ipsum", "dolor sit amet, consectetur adipiscing elit."),
+    ListItemData("Duis aute", "irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."),
+    ListItemData("Lorem ipsum", "dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+    ListItemData("Duis aute", "irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
 )

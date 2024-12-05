@@ -8,12 +8,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.rasel.droidlabcompose.data.model.ListItemData
 import com.rasel.droidlabcompose.sampleData
 import com.rasel.droidlabcompose.ui.theme.DroidLabComposeTheme
 
 @Composable
 internal fun ListScreen(
-    list: List<String>,
+    list: List<ListItemData>,
     modifier: Modifier = Modifier,
 ) {
     LazyColumn(
@@ -21,9 +22,10 @@ internal fun ListScreen(
     ) {
         items(
             items = list,
-        ) {
+        ) { item ->
             ListItem(
-                headlineContent = { Text(it) },
+                headlineContent = { Text(item.title) },
+                supportingContent = { Text(item.subtitle) },
             )
             HorizontalDivider()
         }
